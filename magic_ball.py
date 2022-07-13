@@ -1,6 +1,6 @@
-from ast import For
 from random import choice
-from colorama import Fore
+from colorama import Fore, init
+init()
 
 answers = ["Бесспорно", "Мне кажется - да", "Пока неясно, попробуй снова", "Даже не думай",
            "Предрешено", "Вероятнее всего", "Спроси позже", "Мой ответ - нет",
