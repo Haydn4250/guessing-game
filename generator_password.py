@@ -7,7 +7,7 @@ def wrong_len_password(lenght):
     while True:
         lenght = input()
         if lenght.isdigit() == False:
-            print(Fore.CYAN + 'введи число!', Fore.WHITE)
+            print(Fore.CYAN + 'введи число:', end=' ')
         else:
             lenght = int(lenght)
             return lenght
@@ -37,7 +37,7 @@ punctuation = '!#$%&*+-=?@^_'
 chars = ''
 flag = ''
 lenght = ''
-print(Fore.CYAN + 'привет, я программа генерирующая рандомный пароль!', 'введи длину предпологаемого пароля', sep ='\n')
+print(Fore.CYAN + 'привет, я программа генерирующая рандомный пароль!', 'введи длину предполагаемого пароля', sep ='\n')
 lenght = wrong_len_password(lenght)
 
 #функция проверяющая наличие условий пароля
@@ -47,7 +47,7 @@ while True:
     if wrong_answer() == True:
         chars += choice(digits)
     #буквы нижнего регистра в пароле
-    print('Нужны ли буквы нижнего регистра в твоем паролле?')
+    print('Нужны ли буквы нижнего регистра в твоем пароле?')
     if wrong_answer() == True:
         chars += choice(lowercase_letters)
     #буквы верхнего регистра в пароле
